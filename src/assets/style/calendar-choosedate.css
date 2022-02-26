@@ -1,0 +1,465 @@
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  /* font: inherit; */
+  vertical-align: baseline;
+}
+html {
+  border: 0;
+  font-size: 100%;
+  /* font: inherit; */
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+body {
+  background-color: var(--bgWhite);
+}
+.page-calendar {
+  background-color: var(--bgWhite);
+}
+.page-calendar .search__loading-spinner{
+  position: absolute;
+  bottom: 30vh;
+  left: 0;
+  right: 0;
+}
+.page-calendar .cus-header {
+  padding: 0;
+  height: unset;
+}
+.page-calendar h1 {
+  padding-bottom: 8px;
+}
+.page-calendar
+.calendar {
+  width: 100%;
+  padding: 157px 24px 24px 24px;
+  border-bottom: 1px solid #7161ba;
+}
+.calendar-fixed-week{
+  padding-top: 0px !important;
+}
+.fixed {
+  position: fixed;
+  top: 141px;
+  background-color: var(--bgWhite);
+  padding: 16px 24px;
+  display: none;
+}
+.page-calendar .wrap-header {
+  position: fixed;
+  width: 100%;
+  background-color: var(--bgWhite);
+  max-width: 1024px;
+  margin: auto;
+}
+.status-dots {
+  display: flex;
+  gap: 0 2px;
+  justify-content: center;
+}
+.status-dot {
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  display: none;
+  flex-shrink: 0;
+}
+.status-dot-green {
+  background-color: #7fc128;
+}
+.status-dot-purple {
+  background-color: #7161ba;
+}
+.status-dot-blue {
+  background-color: #0faff6;
+}
+.status-dot-red {
+  background-color: #ee6955;
+}
+
+/* .dot-active .status-dot:nth-child(11) {
+  display: flex;
+} */
+
+.dot-active .status-dot {
+  display: flex;
+}
+
+.page-calendar .header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+  margin-top: 16px;
+}
+.time-month {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: capitalize;
+}
+.time-btn-left,
+.time-btn-right {
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* position: absolute; */
+  height: 100%;
+  bottom: 0;
+}
+.time-btn-left {
+  left: calc(100% - 66%);
+}
+.time-btn-right {
+  right: calc(100% - 66%);
+}
+.time-title {
+  max-width: 680px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: auto;
+}
+.nav {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #fff;
+  border-radius: 99px;
+  outline: 0;
+  background-color: transparent;
+  color: #fff;
+  cursor: pointer;
+}
+
+.datetime {
+  margin: 0 auto;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.week-container,
+.day-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.week-container {
+  /* padding-top: 25px; */
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  color: #7161ba;
+}
+
+.week-cell,
+.day-cell {
+  flex: 0 0 calc(100% / 7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 16px;
+}
+.week-cell {
+  color: #7161ba;
+  font-family: "NunitoRegular";
+}
+.day-cell {
+  color: #3b3a40;
+  display: flex;
+  flex-direction: column-reverse;
+  font-family: "Nunito";
+}
+
+.day-cell--faded {
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 16px;
+  color: #a2a1ab;
+}
+
+.day-cell--today {
+  background: #4e4693;
+  border-radius: 8px;
+  color: white;
+}
+
+.status {
+  width: 100%;
+  padding: 8px 5px;
+  background-color: #f5f5f7;
+  border-bottom: solid 1px #eeedf2;
+}
+.status__detail {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 0 24px;
+  gap: 0 24px;
+}
+.status__detail div {
+  font-family: "Nunito";
+  color: #3b3a40;
+  font-size: 10px;
+  line-height: 12px;
+  font-weight: 600;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.dot {
+  margin-right: 4px;
+  width: 6px;
+  height: 6px;
+  background-color: #7fc128;
+  border-radius: 100%;
+}
+/* appointment */
+.appointment {
+  padding: 0px 24px 68px 24px;
+  height: 100%;
+  max-width: 680px;
+}
+.appointment-not {
+  background-color: var(--bgGray);
+  width: 100%;
+  text-align: center;
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  padding: 16px 0 250px 0;
+  height: calc(60vh);
+}
+.appointment-not-title {
+  padding-top: 16px;
+}
+.appointment__title {
+  display: flex;
+  flex-direction: row;
+  color: #a2a1ab;
+  padding: 16px 0 6px 0;
+}
+.appointment__title--time {
+  padding-right: 12px;
+  color: #a2a1ab;
+  width: 100px;
+  border-right: solid 1px #eeedf2;
+  flex-shrink: 0;
+}
+.appointment__title--time,
+.appointment__title--text {
+  font-size: 10px;
+  line-height: 20px;
+  font-weight: 600;
+  font-family: "Nunito";
+}
+.appointment__title--text {
+  margin-left: 8px;
+}
+.appointment__detail--item {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 8px;
+}
+.appoi__detail {
+  color: #3b3a40;
+  display: flex;
+  flex-direction: row;
+}
+.appoi__detail span {
+  width: 8px;
+  height: 8px;
+  border-radius: 100%;
+  margin: 4px 6px 0px 0px;
+  display: inline-block;
+  flex-shrink: 0;
+}
+
+.appoi__detail--list h4 {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+.appoi__detail--list ul li {
+  list-style: none;
+  margin-bottom: 4px;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 600;
+}
+.appoi__detail--seemore {
+  display: flex;
+  align-items: center;
+  width: max-content;
+  padding: 4px 8px;
+  background: #eeedf2;
+  border-radius: 8px;
+  gap: 0 4px;
+}
+.seemore-title {
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  color: var(--purple);
+}
+@media screen and (max-width: 767px) {
+  .time-btn-left {
+    left: calc(100% - 84%);
+  }
+  .time-btn-right {
+    right: calc(100% - 84%);
+  }
+  .appointment-not {
+    height: 50vh;
+  }
+}
+@media screen and (max-width: 374px) {
+  .time-btn-left {
+    left: calc(100% - 90%);
+  }
+  .time-btn-right {
+    right: calc(100% - 90%);
+  }
+  .appointment {
+    padding: 0 24px 66px 24px;
+  }
+  .appointment-not {
+    padding: 16px 0 120px 0;
+    height: 30vh;
+  }
+  .status__detail {
+    gap: 0 8px;
+  }
+}

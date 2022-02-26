@@ -1,0 +1,74 @@
+.re-card__item{
+    padding: 16px 20px;
+    border-top: solid 0.5px var(--bgGray);
+    border-bottom: solid 0.5px var(--bgGray);
+    display: flex;
+    flex-direction: row;
+}
+.re-card__item-img{
+    width: 76px;
+    height: 76px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+.re-card__item-cnt{
+    width: calc(100% - 76px);
+    padding-left: 18px;
+}
+.re-card__item-cnt .org-name{
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 700;
+    font-family: "NunitoRegular";
+    color: var(--black);
+}
+.re-card__item-cnt .org-address{
+    margin: 2px 0px;
+}
+.re-card__item-cnt .org-address img,
+.re-card__item .org-tags img,
+.re-card__item .org-rate__start img{
+    width: 12px;
+    height: 12px;
+    vertical-align: baseline;
+    margin-right: 4px;
+}
+.re-card__item-cnt .org-address span,
+.re-card__item .org-tags span{
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 600;
+    color: var(--grey);
+    vertical-align: baseline;
+}
+.re-card__item-cnt .icon-left{
+    transform: rotate(-90deg);
+}
+.re-card__item-cnt .org-rate{
+    width: 100%;
+    border-bottom: solid 0.5px var(--bgGray);
+}
+.re-card__item .org-rate__start{
+    margin-right: 12px;
+}
+.re-card__item .org-rate__start span,
+.org-rate__distance{
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: 600;
+    color: var(--textColor);
+}
+.re-card__item-cnt .org-rate__distance div{
+    width: 6px;
+    height: 6px;
+    background-color: var(--purple);
+    border-radius: 100%;
+    margin-right: 4px;
+}
+.re-card__item-cnt .org-view-btn{
+    margin-top: 8px;
+    width: fit-content;
+}
+.re-card__item-cnt .org-view-btn:nth-child(2){
+    margin-left: 6px;
+}

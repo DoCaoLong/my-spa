@@ -1,0 +1,99 @@
+.or-cnt{
+      width: 100%;
+      height: 100%;
+      padding: 24px;
+}
+.or-cnt_list li{
+      margin: 24px 0px;
+}
+.or-cnt_list-item{
+      padding: 12px;
+      border: solid 1px var(--bgGray);
+      border-radius: 12px;
+      position: relative;
+      box-shadow: 0px 4px 20px rgba(113, 97, 186, 0.2);
+}
+.or-cnt_list-item__status{
+      right: 0;
+      margin-right: 12px;
+      position: absolute;
+      background-color: var(--red);
+      padding: 4px 12px;
+      font-weight: 600;
+      font-size: 12px;
+      line-height: 16px;
+      color: var(--darkGrey);
+      border-radius: 8px;
+      margin-top: -26px;
+}
+.or-cnt_list-item__head{
+      display: flex;
+      justify-content: space-between;
+}
+.or-cnt_list-item__head img{
+      width: 65px;
+      height: 65px;
+      border-radius: 12px;
+}
+.or-cnt_list-item__head-cnt{
+      padding-left: 12px;
+      width: calc(100% - 65px);
+}
+.or-cnt_list-item__head-cnt .item__org-name{
+      font-size: 16px;
+      line-height: 20px;
+      font-weight: 700;
+      overflow: hidden;
+      color: var(--black);
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      word-break: break-word;
+}
+.or-cnt_list-item__head-cnt .item__org-address{
+      font-weight: 600;
+      font-size: 12px;
+      line-height: 16px;
+      color: var(--grey);
+      margin: 4px 0px;
+}
+.or-cnt_list-item__head-cnt .item__org-count{
+      font-size: 12px;
+      line-height: 16px;
+      font-weight: 700;
+      color: var(--textColor);
+}
+.or-cnt_list-item__bottom{
+      padding-top: 12px;
+      border-top: solid 1px var(--bgGray);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+}
+.or-cnt_list-item__bottom span:nth-child(1){
+      font-size: 12px;
+      line-height: 16px;
+      font-weight: 600;
+      color: var(--textColor);
+}
+.or-cnt_list-item__bottom span:nth-child(2){
+      padding: 4px 12px;
+      font-weight: 700;
+      font-size: 12px;
+      line-height: 16px;
+      color: var(--purple);
+      border-radius: 8px;
+      background-color: var(--darkGrey);
+      display: flex;
+      align-items: center;
+}
+.or-cnt_list-item__bottom span:nth-child(2) img{
+      margin-left: 6px;
+}
+.or-cnt_list-null{
+      width: 100%;
+      padding: 24px;
+      text-align: center;
+}

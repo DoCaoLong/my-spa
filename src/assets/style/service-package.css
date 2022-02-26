@@ -1,0 +1,12 @@
+@media only screen and (max-width: 375px){
+    .purple-dot{
+        display: none;
+    }
+    .service-type .service-info .rating .result.flex-box-row.service-time{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .service-type .service-info .rating .result span{
+        margin-top: 4px;
+    }
+}

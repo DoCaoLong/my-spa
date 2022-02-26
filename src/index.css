@@ -1,0 +1,125 @@
+:root{
+  --purple: #7161BA;
+  --green: #7FC128;
+  --black: #3B3A40;
+  --grey: #A2A1AB;
+  --momo:#d82d8b;
+  --red: #f13233;
+  --hover: #000000;
+  --bgGray: #e5e5e5;
+  --bgWhite: #f5f5f7;
+  --darkBlue: #4E4693;
+}
+html{
+  scrollbar-width: none;
+}
+@font-face {
+  font-family: 'Nunito';
+  src: url('./assets/font/Nunito-Regular.ttf');
+}
+*{
+  font-family: 'NunitoRegular';
+}
+html{
+  scroll-behavior: smooth;
+  max-width: 1024px;
+  margin: auto;
+}
+body {
+  margin: 0;
+  font-family: 'Nunito';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+body > iframe{
+  position: unset !important;
+}
+
+code {
+  font-family: 'Nunito';
+}
+/* Preload style */
+.preLoader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #fcfcfc;
+}
+.preLoader img{
+  width: 100%;
+  object-fit: contain;
+  max-width: 320px;
+}
+@media only screen and (min-width: 1024px){
+  html{
+    padding: 20px 0;
+  }
+}
+@media only screen and (max-width: 560px){
+  .preLoader img{
+    max-width: 220px;
+  }
+}
+/* cus-popup-success */
+.cus-popup-success{
+  font-family: 'Nunito';
+  width: 310px;
+  padding: 24px;
+  background-color: var(--bgWhite);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.cus-popup-success h1{
+  margin: 24px 0px 4px 0px;
+  text-align: center;
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 700;
+  color: var(--purple);
+}
+.cus-popup-success p{
+  margin: 0px;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  color: var(--hover);
+  text-align: center;
+}
+.cus-popup-success__control{
+  width: 100%;
+  margin-top: 24px;
+  display: flex;
+}
+/* scroll bar */
+#root::-webkit-scrollbar{
+  display: none;
+}
+::-webkit-scrollbar{
+  display: none;
+}
+#root::-webkit-scrollbar-track{
+  border-radius: 1px;
+}
+#root::-webkit-scrollbar-thumb{
+  border-radius: 3px;
+  background-color: var(--purple);
+}
+.flex-row-sp{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.MuiPaper-root{
+  background-color: transparent !important;
+}
+.flex-row{
+  display: flex;
+  align-items: center;
+}
+@media only screen and (max-width: 1023px){
+  ::-webkit-scrollbar{
+    height: 1px;
+  }
+} 

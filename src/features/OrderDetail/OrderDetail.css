@@ -1,0 +1,67 @@
+.order-de{
+      width: 100%;
+      height: 100vh;
+      background-color: var(--darkGrey);
+}
+.order-de__head,
+.order-de__cnt{
+      padding: 16px 24px;
+      background-color: var(--bgWhite);
+}
+.order-de__head-date{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: solid 1px var(--bgGray);
+}
+.order-de__head-date span{
+      font-size: 12px;
+      line-height: 16px;
+      font-weight: 600;
+      color: var(--textColor);
+      padding-bottom: 6px;
+}
+.order-de__head .or-cnt_list-item__head{
+      padding-top: 6px;
+}
+.order-de__cnt-head__btn{
+      margin-top: 16px;
+      padding: 12px 24px 0px 24px;
+      background-color: var(--bgWhite);
+      z-index: 2;
+      position: sticky;
+      top: 0;
+      display: flex;
+      justify-content: space-around;
+      border-bottom: solid 1px var(--bgGray);
+}
+.order-de__cnt-head__btn button{
+      padding: 4px 8px;
+      background-color: transparent;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 20px;
+      color: var(--hover);
+      border: none;
+      outline: none;
+}
+.order-de__cnt-list__item-head{
+      font-size: 18px;
+      line-height: 24px;
+      font-weight: 600;
+      color: var(--purple);
+      padding: 8px 0px;
+      border-bottom: solid 1px var(--purple);
+}
+.cus-item-quantity button{
+      border: none;
+      outline: none;
+      background-color: var(--purple);
+      padding: 4px 8px;
+      margin-top: 4px;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 20px;
+      color: var(--bgWhite);
+      border-radius: 8px;
+}

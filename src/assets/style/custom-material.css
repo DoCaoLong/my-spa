@@ -1,0 +1,75 @@
+.input-filter {
+  width: calc(100% / 3);
+}
+.MuiFormControl-root {
+  margin: 0px !important;
+}
+.MuiSvgIcon-root {
+  color: var(--purple) !important;
+  margin-right: -2px !important;
+}
+.MuiMenuItem-root {
+  font-size: 16px !important;
+  font-weight: 700 !important;
+}
+.MuiInput-root::before {
+  position: absolute;
+  display: none !important;
+}
+.MuiSelect-select {
+  margin-top: 2px !important;
+  font-size: 16px !important;
+  font-weight: 700 !important;
+  border: none !important;
+  padding: 6px 0px 6px 10px !important;
+}
+.MuiPaper-root {
+  font-family: "Nunito", sans-serif !important;
+  /* border-radius: 16px !important; */
+  margin: 0px !important;
+}
+.css-1t1j96h-MuiPaper-root-MuiDialog-paper {
+  margin: 0px !important;
+}
+.MuiModal-root {
+  backdrop-filter: blur(10px) !important;
+}
+.css-19kzrtu {
+  padding: 0px !important;
+}
+.css-1anid1y {
+  padding: 0px 24px !important;
+}
+.css-1e6y48t-MuiButtonBase-root-MuiButton-root {
+  font-family: "NunitoRegular" !important;
+}
+.cus-cart-dock__button.cus-cancel_button{
+  position: absolute;
+  top: 65%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  max-width: 100px;
+}
+.css-18lrjg1-MuiCircularProgress-root {
+  color: var(--purple) !important;
+  width: 25px !important;
+  height: 25px !important;
+}
+
+.MuiCircularProgress-colorPrimary{
+  color: var(--purple) !important;
+}
+.search__loading-spinner .MuiCircularProgress-colorSecondary{
+  color: var(--bgWhite) !important;
+  width: 25px !important;
+  height: 25px !important;
+}
+.my-services{
+  padding-top: 32px;
+}
+.my-services .MuiCircularProgress-colorSecondary{
+  color: var(--purple) !important;
+  width: 30px;
+  height: 30px;
+}
